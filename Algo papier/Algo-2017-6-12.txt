@@ -1,0 +1,49 @@
+Programme affichageDuPlusGrandNombre
+VAR : x, y : entiers
+DEBUT
+Afficher « Affichage du plus grand des 2 nombres »
+Afficher « Saisir x »
+Saisir x
+Afficher « Saisir y »
+Saisir y
+Si x>y
+Alors Afficher « Le plus grand nombre est x et vaut », x
+Sinon Afficher « Le plus grand nombre est y et vaut », y
+FSi
+FIN
+
+Programme affichageDuPlusGrandNombreAvecEgal
+VAR : x, y : entiers
+DEBUT
+Afficher « Affichage du plus grand des deux nombres avec notion d’égalité »
+Afficher « Saisir x »
+Saisir x
+Afficher « Saisir y »
+Saisir y
+Si x=y
+	Alors Afficher « Les deux nombres sont égaux et valent », x
+	Sinon Si x>y
+Alors Afficher « Le plus grand nombre est x et vaut », x
+Sinon Afficher « Le plus grand nombre est y et vaut », y
+FSi
+FSi
+FIN
+
+Programme RangementCroissantMemoire
+VAR x, y : entiers
+DEBUT
+Afficher « Rangement des nombres en ordre croissant dans la mémoire »
+Afficher « Saisir x »
+Saisir x
+Afficher « Saisir y »
+Saisir y
+Si x=y
+	Alors Afficher « Les deux nombres sont égaux et valent », x
+	Sinon Si x>y
+	Alors x <- x-y
+	          y <- x+y
+ 	          x <- y-x
+	            FSi
+            Afficher « L’ordre dans la mémoire est », x, y
+FSi
+FIN

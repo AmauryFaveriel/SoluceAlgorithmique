@@ -1,0 +1,32 @@
+Programme testPositif
+
+VAR x, y: entiers
+    t: booléen
+    r: chaîne de caractères
+
+DEBUT
+
+Afficher "Test positivité de deux entier"
+t <- vrai
+Tant que t=vrai
+	r<-'' (vide)
+	Tant que x<=0 ou y<=0
+		Afficher "Saisir x"
+		Saisir x
+		Afficher "Saisir y"
+		Saisir y
+		Si x>0 et y>0
+			Alors Afficher "Les deux nombres sont positifs."
+			Sinon Afficher "Entrez deux nombres positifs."
+	FTantQue
+	Tant que r<>'oui' et r<>'non'
+		Afficher "Voulez vous recommencer ?"
+		Saisir r
+		Si r='oui'
+			Alors t<-vrai
+			Sinon Si r=non
+			  	Alors t<-faux
+				Sinon "La réponse n'est pas valide, veuillez recommencer"
+	FTantQue
+FTantQue
+	
