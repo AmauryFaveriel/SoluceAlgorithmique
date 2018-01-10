@@ -8,9 +8,9 @@ DEBUT
 
 Afficher "Test positivité de deux entier"
 t <- vrai
-Tant que t=vrai
+Tant que t=vrai Faire
 	r<-'' (vide)
-	Tant que x<=0 ou y<=0
+	Tant que x<=0 ou y<=0 Faire
 		Afficher "Saisir x"
 		Saisir x
 		Afficher "Saisir y"
@@ -18,8 +18,8 @@ Tant que t=vrai
 		Si x>0 et y>0
 			Alors Afficher "Les deux nombres sont positifs."
 			Sinon Afficher "Entrez deux nombres positifs."
-	FTantQue
-	Tant que r<>'oui' et r<>'non'
+	FFaire
+	Tant que r<>'oui' et r<>'non' Faire
 		Afficher "Voulez vous recommencer ?"
 		Saisir r
 		Si r='oui'
@@ -27,6 +27,6 @@ Tant que t=vrai
 			Sinon Si r=non
 			  	Alors t<-faux
 				Sinon "La réponse n'est pas valide, veuillez recommencer"
-	FTantQue
-FTantQue
+	FFaire
+FFaire
 	
