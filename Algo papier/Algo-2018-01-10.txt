@@ -29,4 +29,4 @@ Tant que t=vrai Faire
 				Sinon "La réponse n'est pas valide, veuillez recommencer"
 	FFaire
 FFaire
-	
+

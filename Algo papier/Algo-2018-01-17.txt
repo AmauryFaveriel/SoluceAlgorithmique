@@ -1,0 +1,46 @@
+EXERCICE 1 :
+
+VAR x, y : nombres
+
+DEBUT
+
+Pour x de 1 à 10 Faire
+	Pour y de 1 à 9 Faire
+		Afficher x," x ",y," = ",x*y," "
+	FinPour
+	Retour à la ligne
+FinPour
+
+FIN
+
+
+EXERCICE 2 :
+
+Boucle avec tant que :
+VAR x, y : nombres
+
+DEBUT
+
+Afficher "Saisir x"
+Saisir x
+y <- x+50
+Tant que x<y Faire
+	Afficher x
+	x <- x+1
+FinFaire
+
+FIN
+
+
+Boucle avec pour :
+VAR x, i : nombres
+
+DEBUT
+
+Afficher "Saisir x"
+Saisir x
+Pour i de x à x+50
+	Afficher i
+FinPour
+
+FIN
