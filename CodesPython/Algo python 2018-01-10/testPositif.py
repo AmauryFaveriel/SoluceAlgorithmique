@@ -11,6 +11,12 @@ while t == True:
             print('Les deux nombres sont positifs.')
         else:
             print('Entrez deux nombres positifs.')
+    x1=x
+    y1=0
+    while y1!=y-1 :
+        x+=x1
+        y1+=1
+    print(x1,"x",y,"=",x)
     while r != 'oui' and r != 'non':
         r=input('Voulez vous recommencer?\n')
         if r == 'oui':
