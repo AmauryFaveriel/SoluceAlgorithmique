@@ -1,0 +1,85 @@
+Consigne : Saisir 50 entiers dans un tableau à 2 dimensions puis les réafficher.
+
+Méthode avec boucle Pour :
+Programme affichage50Entiers
+
+VAR x, y = entiers
+    tab = tableau d'entiers
+
+DEBUT
+
+Pour x de 1 à 5 faire
+	Pour y de 1 à 10 faire
+		Afficher 'Saisir un entier : '
+		Saisir tab(x, y)
+	FinPour
+FinPour
+Afficher 'Affichage du tableau'
+Pour x de 1 à 5 faire
+	Pour y de 1 à 10 faire
+		Afficher tab(x, y)
+	FinPour
+FinPour
+
+FIN
+
+
+Méthode avec boucle Tant Que :
+Programme affichage50Entiers
+
+VAR x, y = entiers
+    tab = tableau d'entiers
+
+DEBUT
+
+x<-1
+y<-1
+Tant que x <> 5 faire
+	Tant que y <> 10 faire
+		Afficher 'Saisir un entier : '
+		Saisir tab (x, y)
+		y <- y+1
+	FinFaire
+	x <- x+1
+FinFaire
+Afficher 'Affichage du tableau'
+x <- 1
+y <- 1
+Tant que x <> 5 faire
+	Tant que y <> 10 faire
+		Afficher tab (x, y)
+		y <- y+1
+	FinFaire
+	x <- x+1
+FinFaire
+
+FIN		
+
+
+Soit un tableau t de 5 entiers donné par l'utilisateur. Donner la valeur du plus grand element du tableau ainsi que l'indice de la 1ère occurence de ce maximum :
+
+VAR x, max, o : entiers
+    tab : tableau d'entiers
+
+DEBUT
+
+Pour x de 1 à 5 faire
+	Afficher 'Saisir un entier'
+	Saisir tab(x)
+FinPour
+Pour x de 1 à 5
+	Si x=1
+		Alors max <- tab(x)
+		      o <-1
+		Sinon Si tab(x) > max
+			Alors max <- tab(x)
+			      o <-1
+			Sinon Si tab(x) = max
+				Alors o <- o + 1
+			      FSi
+		      FSi
+	FSi
+FinPour
+Afficher 'La valeur max est ',max,' et elle est présente ',o,' fois dans le tableau.'
+
+FIN
